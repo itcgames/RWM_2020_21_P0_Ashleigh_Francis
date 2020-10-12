@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 1920
-    height: 1037
+    x: -710
+    y: 694
+    width: 1904
+    height: 1021
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 987
+    width: 1904
+    height: 971
   m_MinSize: {x: 504, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 112
+  controlID: 55
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1367
+    x: 1706
     y: 0
-    width: 553
-    height: 987
+    width: 198
+    height: 971
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -93,10 +93,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 403
-    height: 598
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 505
+    height: 429
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 598
-    width: 1367
-    height: 389
+    y: 429
+    width: 1706
+    height: 542
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 1037
+    width: 1904
+    height: 1021
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -170,7 +170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1904
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1017
-    width: 1920
+    y: 1001
+    width: 1904
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -215,12 +215,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1367
-    height: 987
+    width: 1706
+    height: 971
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 15
+  controlID: 56
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,12 +240,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1367
-    height: 598
+    width: 1706
+    height: 429
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 16
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,12 +261,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 403
+    x: 505
     y: 0
-    width: 964
-    height: 598
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 1201
+    height: 429
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -294,22 +294,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1367
-    y: 73
-    width: 552
-    height: 966
+    x: 1707
+    y: 19
+    width: 197
+    height: 950
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
     ID: 140
     splitterInitialOffset: 0
     currentActiveSplitter: -1
-    realSizes: a0020000e0000000
+    realSizes: 94020000dc000000
     relativeSizes:
     - 0.75
     - 0.25
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 896
+    lastTotalSize: 880
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
       name: UnityUnitTestingTutorial
       fullName: UnityUnitTestingTutorial
       resultStatus: 1
-      duration: 0.8044
+      duration: 1.1280973
       messages: 
       output: 
       stacktrace: 
@@ -332,14 +332,14 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1008
-      uniqueId: '[Tests][C:/Users/fcarr/Desktop/RWM_2020_21_P0_Ashleigh_Francis/Crashteroids
+    - id: 1009
+      uniqueId: '[Tests][C:/Users/Ashleigh/Documents/GitHub/RWM_2020_21_P0_Ashleigh_Francis/Crashteroids
         Starter/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
-      fullName: C:/Users/fcarr/Desktop/RWM_2020_21_P0_Ashleigh_Francis/Crashteroids
+      fullName: C:/Users/Ashleigh/Documents/GitHub/RWM_2020_21_P0_Ashleigh_Francis/Crashteroids
         Starter/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.7838556
+      duration: 1.0966954
       messages: 
       output: 
       stacktrace: 
@@ -355,7 +355,7 @@ MonoBehaviour:
       name: TestSuite
       fullName: TestSuite
       resultStatus: 1
-      duration: 0.7768209
+      duration: 1.0843194
       messages: 
       output: 
       stacktrace: 
@@ -372,7 +372,7 @@ MonoBehaviour:
       name: AsteroidsMoveDown
       fullName: TestSuite.AsteroidsMoveDown
       resultStatus: 1
-      duration: 0.1887029
+      duration: 0.2154438
       messages: 
       output: 
       stacktrace: 
@@ -389,7 +389,7 @@ MonoBehaviour:
       name: CheckGameScoreIsEqualToZero
       fullName: TestSuite.CheckGameScoreIsEqualToZero
       resultStatus: 1
-      duration: 0.113511
+      duration: 0.1234029
       messages: 
       output: 
       stacktrace: 
@@ -406,7 +406,7 @@ MonoBehaviour:
       name: DestroyedAsteroidRaisesScore
       fullName: TestSuite.DestroyedAsteroidRaisesScore
       resultStatus: 1
-      duration: 0.1096249
+      duration: 0.11331
       messages: 
       output: 
       stacktrace: 
@@ -423,7 +423,7 @@ MonoBehaviour:
       name: GameOverOccursOnAsteroidCollision
       fullName: TestSuite.GameOverOccursOnAsteroidCollision
       resultStatus: 1
-      duration: 0.1122038
+      duration: 0.1139127
       messages: 
       output: 
       stacktrace: 
@@ -440,7 +440,7 @@ MonoBehaviour:
       name: LaserDestroysAsteroid
       fullName: TestSuite.LaserDestroysAsteroid
       resultStatus: 1
-      duration: 0.109545
+      duration: 0.1195935
       messages: 
       output: 
       stacktrace: 
@@ -457,7 +457,7 @@ MonoBehaviour:
       name: LaserMovesUp
       fullName: TestSuite.LaserMovesUp
       resultStatus: 1
-      duration: 0.1109727
+      duration: 0.1142345
       messages: 
       output: 
       stacktrace: 
@@ -474,7 +474,7 @@ MonoBehaviour:
       name: NewGameRestartsGame
       fullName: TestSuite.NewGameRestartsGame
       resultStatus: 1
-      duration: 0.0112428
+      duration: 0.0165313
       messages: 
       output: 
       stacktrace: 
@@ -486,12 +486,46 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
-    m_ResultText: CheckGameScoreIsEqualToZero (0.114s)
+    - id: 1009
+      uniqueId: Tests.dll/TestSuite/[Tests][TestSuite.ShipMovesLeft]
+      name: ShipMovesLeft
+      fullName: TestSuite.ShipMovesLeft
+      resultStatus: 1
+      duration: 0.1186685
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
+    - id: 1010
+      uniqueId: Tests.dll/TestSuite/[Tests][TestSuite.ShipMovesRight]
+      name: ShipMovesRight
+      fullName: TestSuite.ShipMovesRight
+      resultStatus: 1
+      duration: 0.1170214
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][TestSuite][suite]
+    m_ResultText: GameOverOccursOnAsteroidCollision (0.114s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a78bbbf1
-      m_LastClickedID: -239367257
+      m_SelectedIDs: 1fdc78ee
+      m_LastClickedID: -294069217
       m_ExpandedIDs: e0e582b8442152eae557abf74dad7d13e9ece11b8359db4145dca17bb79de07cffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -617,9 +651,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 671
-    width: 1366
-    height: 368
+    y: 491
+    width: 1719
+    height: 508
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -634,21 +668,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/RW/Tests
+    - Assets/RW/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/RW/Tests
+  - Assets/RW/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\fcarr\Desktop\RWM_2020_21_P0_Ashleigh_Francis\Crashteroids
+  m_LastProjectPath: C:\Users\Ashleigh\Documents\GitHub\RWM_2020_21_P0_Ashleigh_Francis\Crashteroids
     Starter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a380000
-    m_LastClickedID: 14346
-    m_ExpandedIDs: 00000000fe3500000036000002360000
+    m_SelectedIDs: 62360000
+    m_LastClickedID: 13922
+    m_ExpandedIDs: 000000000c3600000e3600001036000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +710,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe3500000036000002360000
+    m_ExpandedIDs: 000000000c3600000e36000010360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -792,16 +826,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 402
-    height: 577
+    y: 19
+    width: 504
+    height: 408
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 60fbffff
+      m_ExpandedIDs: 58a7ffff74a7ffff84aeffffc6afffffe2afffffeab6ffff82b8ffff9ab8ffffb6b8ffff92b9ffffaeb9ffffb6c0ffff04c2ffff20c2ffff2cc9ffff6ecaffff8acaffffe8d0ffff12d2ffff2ed2ffff8cd8ffffb4d9ffffd0d9ffff2ee0ffff14e9ffff2ce9ffff48e9ffff68eaffff84eafffff4f0ffffbef3ffffdaf3ffff96f9ffff06fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -961,10 +995,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 403
-    y: 73
-    width: 962
-    height: 577
+    x: -205
+    y: 724
+    width: 1199
+    height: 408
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -974,7 +1008,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 962, y: 556}
+  m_TargetSize: {x: 1199, y: 387}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -989,17 +1023,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -481
-    m_HBaseRangeMax: 481
-    m_VBaseRangeMin: -278
-    m_VBaseRangeMax: 278
+    m_HBaseRangeMin: -599.5
+    m_HBaseRangeMax: 599.5
+    m_VBaseRangeMin: -193.5
+    m_VBaseRangeMax: 193.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1010,23 +1044,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 962
-      height: 556
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 481, y: 278}
+      width: 1199
+      height: 387
+    m_Scale: {x: 1.0609, y: 1.0608999}
+    m_Translation: {x: 596.75946, y: 192.73871}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -481
-      y: -278
-      width: 962
-      height: 556
+      x: -562.50305
+      y: -181.67474
+      width: 1130.1725
+      height: 364.78467
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 962, y: 577}
+  m_LastWindowPixelSize: {x: 1199, y: 408}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1054,7 +1088,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 671
-    width: 1366
-    height: 368
+    y: 448
+    width: 1705
+    height: 521
   m_ViewDataDictionary: {fileID: 0}
