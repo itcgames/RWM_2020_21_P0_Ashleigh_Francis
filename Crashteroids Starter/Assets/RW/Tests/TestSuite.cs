@@ -13,8 +13,6 @@ public class TestSuite
         GameObject gameGameObject =
             MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Game"));
         game = gameGameObject.GetComponent<Game>();
-        //sets the gamescore to 0 on startup
-        game.score = 0;
     }
 
     [TearDown]
@@ -94,6 +92,13 @@ public class TestSuite
     [UnityTest]
     public IEnumerator CheckGameScoreIsEqualToZero()
     {
+        Assert.AreEqual(game.score, 0);
+
+        game.score = 2;
+
+        game.isGameOver = true;
+        game.NewGame();
+
         yield return new WaitForSeconds(0.1f);
         Assert.AreEqual(game.score, 0);
     }
