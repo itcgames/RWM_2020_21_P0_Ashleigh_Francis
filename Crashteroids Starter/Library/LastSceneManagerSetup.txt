@@ -1,0 +1,6 @@
+sceneSetups:
+- path: C:/Users/Ashleigh/Documents/RWM_2020_21_P0_Ashleigh_Francis-master/Crashteroids
+    Starter/Assets/RW/Scenes/Game.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
