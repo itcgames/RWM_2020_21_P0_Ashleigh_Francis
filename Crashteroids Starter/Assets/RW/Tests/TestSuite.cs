@@ -2,6 +2,7 @@
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
+using System.Collections.Specialized;
 
 public class TestSuite
 {
@@ -124,5 +125,32 @@ public class TestSuite
         yield return new WaitForSeconds(0.1f);
         game.GetShip().MoveRight();
         Assert.Greater(ship.transform.position.x, initialXPos);
+    }
+
+    [UnityTest]
+    public IEnumerator ShieldIsToggled()
+    {
+        Shield shield = game.GetShield();
+
+        shield.isToggled = false;
+
+        shield.ToggleShield();
+
+        yield return new WaitForSeconds(0.1f);
+
+        Assert.True(shield.isToggled);
+    }
+
+    [UnityTest]
+    public IEnumerator ShieldDestroyedOnCollision()
+    {
+        GameObject asteroid = game.GetSpawner().SpawnAsteroid();
+        asteroid.transform.position = Vector3.zero + Vector3.up;
+        Shield shield = game.GetShield();
+        shield.transform.position = Vector3.zero;
+
+        yield return new WaitForSeconds(0.5f);
+
+        Assert.True(shield.isDestroyed);
     }
 }

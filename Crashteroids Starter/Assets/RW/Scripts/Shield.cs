@@ -5,48 +5,68 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
+    [SerializeField]
+    private Spawner spawner;
+
     public Game game;
     public GameObject ship;
 
-    private bool isToggled = false;
-
-    private GameObject shield;
+    public bool isToggled = false;
+    public bool isDestroyed = false;
 
     void Start()
     {
-        shield = transform.GetChild(0).gameObject;
     }
 
     void Update()
     {
 		if (isToggled)
 		{
-            shield.transform.position = ship.transform.position;
+            transform.position = ship.transform.position;
         }
     }
 
     void LateUpdate()
 	{
-		if (!game.isGameOver)
-		{
+        if (Input.GetKeyDown(KeyCode.T))
+        {
             ToggleShield();
 		}
 	}
 
-    void ToggleShield()
-	{
-		if (Input.GetKeyDown(KeyCode.T))
-		{
-			if (isToggled)
-			{
+    public void ToggleShield()
+    {
+        if (!game.isGameOver && !isDestroyed)
+        {
+            if (isToggled)
+            {
                 isToggled = false;
-                shield.GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<SpriteRenderer>().enabled = false;
             }
-			else
-			{
+            else
+            {
                 isToggled = true;
-                shield.GetComponent<SpriteRenderer>().enabled = true;
+                GetComponent<SpriteRenderer>().enabled = true;
             }
-		}
-	}
+        }
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Asteroid")
+		{
+            if (collision.gameObject.GetComponent<Asteroid>() != null)
+            {
+                if (!isDestroyed && isToggled)
+                {
+                    spawner.asteroids.Remove(collision.gameObject);
+                    Destroy(collision.gameObject);
+
+                    isToggled = false;
+                    isDestroyed = true;
+                    GetComponent<SpriteRenderer>().enabled = false;
+                }
+            }
+        }
+    }
 }

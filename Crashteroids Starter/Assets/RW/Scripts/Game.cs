@@ -50,6 +50,8 @@ public class Game : MonoBehaviour
     private Text titleText;
     [SerializeField]
     private Spawner spawner;
+    [SerializeField]
+    private Shield shield;
 
     private static Game instance;
 
@@ -102,5 +104,10 @@ public class Game : MonoBehaviour
     public Spawner GetSpawner()
     {
         return spawner.GetComponent<Spawner>();
+    }
+
+    public Shield GetShield()
+    {
+        return shield.GetComponent<Shield>();
     }
 }
