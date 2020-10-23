@@ -153,4 +153,23 @@ public class TestSuite
 
         Assert.True(shield.isDestroyed);
     }
+
+    [UnityTest]
+    public IEnumerator ShieldRepairedOnNewGame()
+    {
+        Shield shield = game.GetShield();
+
+        game.isGameOver = true;
+
+        shield.DestroyShield();
+
+        Assert.True(shield.isDestroyed);
+
+        yield return new WaitForSeconds(0.1f);
+
+        game.NewGame();
+
+        Assert.False(shield.isDestroyed);
+        Assert.False(shield.isToggled);
+    }
 }

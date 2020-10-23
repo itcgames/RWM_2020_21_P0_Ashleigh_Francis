@@ -72,6 +72,7 @@ public class Game : MonoBehaviour
         instance.spawner.StopSpawning();
         instance.shipModel.GetComponent<Ship>().Explode();
         instance.gameOverText.enabled = true;
+        instance.shield.GetComponent<Shield>().DestroyShield();
     }
 
     public void NewGame()
@@ -87,6 +88,7 @@ public class Game : MonoBehaviour
         spawner.BeginSpawning();
         shipModel.GetComponent<Ship>().RepairShip();
         spawner.ClearAsteroids();
+        shield.GetComponent<Shield>().RepairShield();
         gameOverText.enabled = false;
     }
 

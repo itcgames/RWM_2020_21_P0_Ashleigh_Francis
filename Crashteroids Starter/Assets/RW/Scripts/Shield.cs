@@ -62,11 +62,23 @@ public class Shield : MonoBehaviour
                     spawner.asteroids.Remove(collision.gameObject);
                     Destroy(collision.gameObject);
 
-                    isToggled = false;
-                    isDestroyed = true;
-                    GetComponent<SpriteRenderer>().enabled = false;
+                    DestroyShield();
                 }
             }
         }
+    }
+
+    public void DestroyShield()
+	{
+        isToggled = false;
+        isDestroyed = true;
+        GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    public void RepairShield()
+	{
+        isToggled = false;
+        isDestroyed = false;
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }
