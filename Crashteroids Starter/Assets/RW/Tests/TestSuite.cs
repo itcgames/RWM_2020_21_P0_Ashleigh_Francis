@@ -172,4 +172,24 @@ public class TestSuite
         Assert.False(shield.isDestroyed);
         Assert.False(shield.isToggled);
     }
+    public IEnumerator ShipMovesUp()
+    {
+        GameObject ship = game.GetShip().gameObject;
+
+        float initialYPos = ship.transform.position.y;
+        yield return new WaitForSeconds(0.1f);
+        game.GetShip().MoveUp();
+        Assert.Greater(ship.transform.position.y, initialYPos);
+    }
+
+    [UnityTest]
+    public IEnumerator ShipMovesDown()
+    {
+        GameObject ship = game.GetShip().gameObject;
+
+        float initialYPos = ship.transform.position.y;
+        yield return new WaitForSeconds(0.1f);
+        game.GetShip().MoveDown();
+        Assert.Greater(ship.transform.position.y, initialYPos);
+    }
 }

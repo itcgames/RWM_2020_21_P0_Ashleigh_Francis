@@ -49,7 +49,9 @@ public class Ship : MonoBehaviour
 
     private float maxLeft = -8;
     private float maxRight = 8;
-
+    //sprint 4
+    private float maxUp = 4.5f;
+    private float maxDown = -3;
     private void Update()
     {
         if (isDead)
@@ -70,6 +72,15 @@ public class Ship : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             MoveRight();
+        }
+        // sprint 4
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            MoveUp();
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            MoveDown();
         }
     }
 
@@ -99,7 +110,7 @@ public class Ship : MonoBehaviour
         transform.Translate(-Vector3.left * Time.deltaTime * speed);
         if (transform.position.x < maxLeft)
         {
-            transform.position = new Vector3(maxLeft, -3.22f, 0);
+            transform.position = new Vector3(maxLeft, transform.position.y, 0);
         }
     }
 
@@ -108,7 +119,7 @@ public class Ship : MonoBehaviour
         transform.Translate(-Vector3.right * Time.deltaTime * speed);
         if (transform.position.x > maxRight)
         {
-             transform.position = new Vector3(maxRight, -3.22f, 0);
+             transform.position = new Vector3(maxRight, transform.position.y, 0);
         }
     }
 
@@ -124,5 +135,23 @@ public class Ship : MonoBehaviour
         explosion.SetActive(false);
         mesh.enabled = true;
         isDead = false;
+    }
+    // sprint 4
+    public void MoveUp()
+    {
+        transform.Translate(-Vector3.forward * Time.deltaTime * speed);
+        if (transform.position.y > maxUp)
+        {
+            transform.position = new Vector3(transform.position.x, maxUp, 0);
+        }
+    }
+
+    public void MoveDown()
+    {
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        if (transform.position.y < maxDown)
+        {
+            transform.position = new Vector3(transform.position.x, maxDown, 0);
+        }
     }
 }
